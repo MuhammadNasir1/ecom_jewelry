@@ -52,7 +52,7 @@
 
     <nav class="navbar top-bar">
       <div class="container-fluid ">
-        <div class="d-flex justify-content-between w-100 px-2">
+        <div class="d-flex justify-content-between w-100 px-2 align-items-center">
           <div class="top-message">
             <p>Welcome to <strong>Blank</strong> Jewellery online store</p>
           </div>
@@ -60,7 +60,7 @@
             <div class="dropdown_box">
               <p class="dropshow_btn "><span class="curruncy_view">USD</span> <i class="fa-solid fa-chevron-down"></i>
               </p>
-              <div class="dropdown_details show_dw  hide_dropdown" style="margin-right: 80px; display: none;">
+              <div class="dropdown_details ">
                 <ul class="dropdown_menu ">
                   <li data-currency="PKR" class="dropdown_list curruncylist">PKR - Pakistani Rupees</li>
                   <li data-currency="USD" class="dropdown_list curruncylist">USD - Us Doller</li>
@@ -72,14 +72,14 @@
             </div>
             <div class="mx-2">|</div>
             <div class="dropdown_box">
-              <p class="dropshow_btn "><span class="curruncy_view">USD</span> <i class="fa-solid fa-chevron-down"></i>
+              <p class="dropshow_btn "><span class="lan_view">English</span> <i class="fa-solid fa-chevron-down"></i>
               </p>
-              <div class="dropdown_details show_dw  hide_dropdown" style="margin-right: 0px; display: block;">
+              <div class="dropdown_details show_dw  hide_dropdown" style="margin-right: 0px; ">
                 <ul class="dropdown_menu ">
-                  <li data-currency="PKR" class="dropdown_list curruncylist">PKR - Pakistani Rupees</li>
-                  <li data-currency="USD" class="dropdown_list curruncylist">USD - Us Doller</li>
-                  <li data-currency="EUR" class="dropdown_list curruncylist">EUR - Euro</li>
-                  <li data-currency="GBP" class="dropdown_list curruncylist">GBP - British Pound</li>
+                  <li data-lan="English" class="dropdown_list lanlist">English</li>
+                  <li data-lan="Spanish" class="dropdown_list lanlist">Spanish</li>
+                  <li data-lan="Arabic" class="dropdown_list lanlist">Arabic</li>
+                  <li data-lan="Urdu" class="dropdown_list lanlist">Urdu</li>
 
                 </ul>
               </div>
@@ -89,32 +89,35 @@
       </div>
 
     </nav>
-    <!--     
-    <nav class="top-bar">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-6">
-            <div class="top-message">
-              <p>Welcome to <strong>Blank</strong> Jewellery online store</p>
-            </div>
-          </div>
-          <div class="col-6 float-end">
-            <div class="dropdown_box">
-              <p data-bs-toggle="dropdown" aria-expanded="false">USD <i class="fa-solid fa-chevron-down"></i></p>
-              <button class="btn btn-secondary dropdown-toggle" type="button">
-                Dropdown button
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+
+
+    <nav class="navmain">
+
+      <div class="nav-log">
+        <img src="./images/logo_corano_125x.png" alt="Logo">
+      </div>
+      <div class="navbar-link">
+        <ul class="nav_list">
+          <li><a href="#" class="link">Home</a></li>
+          <li><a href="#" class="link">Contact us</a></li>
+          <div class="dropdown_box">
+            <p class="dropshow_btn "><span class="lan_view">English</span> <i class="fa-solid fa-chevron-down"></i>
+            </p>
+            <div class="dropdown_details show_dw  hide_dropdown" style="margin-right: 0px; ">
+              <ul class="dropdown_menu ">
+                <li data-lan="English" class="dropdown_list lanlist">English</li>
+                <li data-lan="Spanish" class="dropdown_list lanlist">Spanish</li>
+                <li data-lan="Arabic" class="dropdown_list lanlist">Arabic</li>
+                <li data-lan="Urdu" class="dropdown_list lanlist">Urdu</li>
+
               </ul>
             </div>
           </div>
-
-        </div>
+        </ul>
       </div>
-    </nav> -->
+
+    </nav>
+
   </header>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
     integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="

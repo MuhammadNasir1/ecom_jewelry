@@ -88,10 +88,13 @@ html {
 
 .top-bar {
   display: flex;
+  border-bottom: .50px solid #80808043;
+  align-items: center;
 
   & .top-message p {
     color: var(--dark-color);
     font-size: 1rem;
+    margin-bottom: 0;
   }
 
 
@@ -110,16 +113,22 @@ html {
     & i {
       font-size: 0.6rem;
     }
+  }
+}
 
-    // &:hover + .dropdown_details{
-    //   display: block;
-    // }
+.dropdown_box {
+  position: relative;
+
+  &:hover .dropdown_details {
+    display: block;
+    transition: all 10s;
   }
 }
 
 .dropdown_details {
   position: absolute;
   right: 2rem;
+  display: none;
 
   & ul {
     list-style: none;
@@ -141,6 +150,36 @@ html {
       &:hover {
         color: var(--primary-color);
       }
+    }
+  }
+}
+
+
+.navmain {
+  display: flex;
+  justify-content: space-around;
+  height: 6rem;
+  align-items: center;
+  border: .50px solid #80808043;
+
+}
+
+.navbar-link {
+
+  & .nav_list {
+    height: 100%;
+
+    list-style: none;
+    display: flex;
+    // align-items: center;
+    padding: 0;
+    column-gap: 20px;
+
+    & .link {
+      text-decoration: none;
+      color: #222;
+      font-size: 1rem;
+
     }
   }
 }

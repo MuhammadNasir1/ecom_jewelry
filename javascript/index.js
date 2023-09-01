@@ -44,12 +44,6 @@ gsap.from(".sale_box", {
   duration: 0.5,
 });
 
-let dropshow_btn = document.querySelector(".dropshow_btn");
-let dropdown_det = document.querySelector(".dropdown_details");
-
-let ddownshow = dropshow_btn.addEventListener("mouseenter", function () {
-  dropdown_det.style.display = "block";
-});
 let curruncy_list = document.querySelectorAll(".curruncylist");
 let curruncy_view = document.querySelector(".curruncy_view");
 let change_cur = curruncy_list.forEach((e) => {
@@ -58,10 +52,10 @@ let change_cur = curruncy_list.forEach((e) => {
   });
 });
 
-let hide_text = document.querySelectorAll(".hide_dropdown");
-
-hide_text.forEach((element) => {
-  element.addEventListener("mouseleave", function () {
-    element.style.display = "none";
+let lan_list = document.querySelectorAll(".lanlist");
+let lan_view = document.querySelector(".lan_view");
+let change_lan = lan_list.forEach((lan) => {
+  lan.addEventListener("click", function () {
+    lan_view.innerHTML = lan.getAttribute("data-lan");
   });
 });
