@@ -51,11 +51,10 @@ let ddownshow = curruncy_name.addEventListener("mouseenter", function () {
   dropdown_det.style.display = "block";
 });
 let curruncy_list = document.querySelectorAll(".curruncylist");
+let curruncy_view = document.querySelector(".curruncy_view");
 let change_cur = curruncy_list.forEach((e) => {
   e.addEventListener("click", function () {
-    curruncy_name.innerHTML =
-      e.getAttribute("data-currency") +
-      '<i class="fa-solid fa-chevron-down"></i>';
+    curruncy_view.textContent = e.getAttribute("data-currency");
   });
 });
 
@@ -66,10 +65,3 @@ hide_text.forEach((element) => {
     element.style.display = "none";
   });
 });
-
-// dropdown_det.forEach((element) => {
-//   element.addEventListener("mouseout", function () {
-//     // You can hide the element by changing its display property to "none"
-//     element.style.display = "none ";
-//   });
-// });
