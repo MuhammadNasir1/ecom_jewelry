@@ -44,10 +44,10 @@ gsap.from(".sale_box", {
   duration: 0.5,
 });
 
+let dropshow_btn = document.querySelector(".dropshow_btn");
 let dropdown_det = document.querySelector(".dropdown_details");
-let curruncy_name = document.querySelector(".curruncy_name");
 
-let ddownshow = curruncy_name.addEventListener("mouseenter", function () {
+let ddownshow = dropshow_btn.addEventListener("mouseenter", function () {
   dropdown_det.style.display = "block";
 });
 let curruncy_list = document.querySelectorAll(".curruncylist");
@@ -58,7 +58,7 @@ let change_cur = curruncy_list.forEach((e) => {
   });
 });
 
-let hide_text = document.querySelectorAll(".hide_text");
+let hide_text = document.querySelectorAll(".hide_dropdown");
 
 hide_text.forEach((element) => {
   element.addEventListener("mouseleave", function () {

@@ -101,7 +101,6 @@ html {
 .dropdown_details {
   position: absolute;
   right: 2rem;
-  display: none;
 }
 .dropdown_details ul {
   list-style: none;
