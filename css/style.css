@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #c29958;
+  --secondary-color: #C29958;
+  --light-color: #F4F4F4;
+  --dark-color: #555;
+  --white-color: #ffffff;
+  --black-color: #000000;
+}
+
+.sale_box {
+  background-color: #e7c8b2;
+  transition: all 1s linear;
+}
+
+.offer-details {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  justify-content: center;
+  padding: 0.5rem 0;
+}
+.offer-details p {
+  color: var(--dark-color);
+  font-size: 0.9rem;
+  margin: 0%;
+  margin-top: 0.9rem;
+}
+
+.sale-time-box {
+  display: flex;
+  -moz-column-gap: 0.9rem;
+       column-gap: 0.9rem;
+}
+.sale-time-box .box {
+  background-color: var(--primary-color);
+  line-height: 1.2rem;
+  padding: 6px 3px;
+  border-radius: 5px;
+  width: 60px;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.176);
+}
+.sale-time-box .box p {
+  text-align: center;
+  color: var(--white-color);
+  font-weight: 700;
+  margin: 0;
+  font-size: 0.9rem;
+}
+.sale-time-box button {
+  padding: 5px 15px;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  font-weight: 700;
+  border: 1px solid var(--white-color);
+  border-radius: 0.2rem;
+  margin-top: 0.4rem;
+}
+.sale-time-box .hide_message i {
+  position: absolute;
+  right: 20%;
+  cursor: pointer;
+}
+
+.top-bar {
+  display: flex;
+}
+.top-bar .top-message p {
+  color: var(--dark-color);
+  font-size: 1rem;
+}
+
+.dropdown_box {
+  margin-left: 10px;
+}
+.dropdown_box p {
+  color: var(--dark-color);
+  font-size: 1rem;
+  margin: 0;
+  cursor: pointer;
+}
+.dropdown_box p i {
+  font-size: 0.6rem;
+}
+
+.dropdown_details {
+  position: absolute;
+  right: 2rem;
+  display: none;
+}
+.dropdown_details ul {
+  list-style: none;
+  padding: 0;
+  background-color: var(--white-color);
+  border: 0.5px solid rgba(128, 128, 128, 0.262745098);
+  width: 200px;
+  max-height: 200px;
+  padding: 12px;
+}
+.dropdown_details ul .dropdown_list {
+  font-size: 0.9rem;
+  color: var(--dark-color);
+  position: relative;
+  margin-top: 0.5rem;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.dropdown_details ul .dropdown_list:hover {
+  color: var(--primary-color);
+}/*# sourceMappingURL=style.css.map */
