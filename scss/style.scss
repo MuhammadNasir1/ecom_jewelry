@@ -100,7 +100,7 @@ html {
 
 }
 
-
+// =======dropdown=====
 .dropdown_box {
   margin-left: 10px;
 
@@ -116,19 +116,13 @@ html {
   }
 }
 
-.dropdown_box {
-  position: relative;
 
-  &:hover .dropdown_details {
-    display: block;
-    transition: all 10s;
-  }
-}
 
 .dropdown_details {
   position: absolute;
   right: 2rem;
   display: none;
+  z-index: 999;
 
   & ul {
     list-style: none;
@@ -143,7 +137,7 @@ html {
       font-size: .9rem;
       color: var(--dark-color);
       position: relative;
-      margin-top: .5rem;
+      margin-top: .6rem;
       transition: all 0.2s;
       cursor: pointer;
 
@@ -154,26 +148,154 @@ html {
   }
 }
 
+.dropdown_details .dropdown_nav {
+  font-size: .9rem;
+  color: var(--dark-color);
+  position: relative;
+  margin-top: .6rem;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+
+
+.dropdown_box {
+  position: relative;
+
+  &:hover .dropdown_details {
+    display: block;
+  }
+
+  &:hover .nabv_dropdown {
+    display: block;
+
+  }
+}
+
+
+.nabv_dropdown {
+  position: absolute;
+  left: 0;
+  display: none;
+  z-index: 999;
+
+  & ul {
+    list-style: none;
+    background-color: var(--white-color);
+    border: .50px solid #80808043;
+    width: 230px;
+    max-height: 200px;
+    padding: 0;
+    color: var(--dark-color);
+
+    & a {
+      text-decoration: none;
+      color: var(--dark-color);
+      width: 100%;
+
+    
+    }
+
+    & .dropdown_nav {
+      font-size: 1rem;
+      color: var(--dark-color);
+      position: relative;
+      margin-top: .8rem;
+      padding-left: .8rem;
+      padding-bottom: .8rem;
+      transition: all 0.2s;
+      cursor: pointer;
+      border-bottom: .50px dashed #80808043;
+
+      & i {
+        display: none;
+        margin: 0 .2rem;
+      }
+
+     &:hover a {
+        color: var(--primary-color);
+
+      }
+
+      &:hover a i {
+        color: var(--primary-color);
+        display: inline;
+      }
+    }
+  }
+}
+
+// =======dropdown-end=====
+
+.new-btn {
+  color: var(--white-color);
+  background-color: #FF0000;
+  font-size: 0.7rem;
+  position: absolute;
+  right: -5px;
+  top: -15px;
+  padding: 0px 5px;
+  font-weight: 700;
+
+}
+
+.search-bar {
+  position: relative;
+
+  & i {
+    position: absolute;
+    top: 30%;
+    left: 1rem;
+    color: var(--dark-color);
+    font-size: 1.2rem;
+
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+
+  & input {
+    border: none;
+    background-color: #f7f7f7;
+    border-radius: 30px;
+    padding: 10px 20px 10px 50px;
+    width: 100%;
+    font-size: 0.8rem;
+
+    &:focus {
+      outline: 0.50px solid gray;
+    }
+
+    &::placeholder {
+      color: gray;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+// ===navbar-styling====
 
 .navmain {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 6rem;
   align-items: center;
   border: .50px solid #80808043;
+  padding: 0 2rem;
 
 }
 
 .navbar-link {
 
+
+
   & .nav_list {
     height: 100%;
-
     list-style: none;
     display: flex;
-    // align-items: center;
     padding: 0;
     column-gap: 20px;
+    margin-bottom: 0 !important;
 
     & .link {
       text-decoration: none;
@@ -183,3 +305,86 @@ html {
     }
   }
 }
+
+
+.nav-lik:hover {
+  transition: all 0.2s !important;
+  color: var(--primary-color) !important;
+}
+
+// =====nav-right-part
+
+.nav-icons {
+  display: flex;
+  column-gap: 1.5rem;
+  height: 100%;
+  align-items: center;
+
+  & .nav-user {
+
+    & i {
+      font-size: 1.6rem;
+      color: rgb(76, 75, 75);
+      height: 100%;
+    }
+
+    &:hover i {
+      color: var(--primary-color);
+    }
+  }
+
+  & .user_icn i {
+    border: 0.20px solid var(--dark-color);
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 1.2rem !important;
+
+    &:hover {
+      border-color: var(--primary-color);
+    }
+  }
+}
+
+.cart-box {
+  & button {
+    height: 50px;
+    width: 50px;
+    background-color: var(--primary-color);
+    border: none;
+    position: absolute;
+    left: -50px;
+
+    & i {
+      color: var(--white-color);
+      transition: all 1s;
+      font-size: 25px;
+    }
+
+    &:hover i {
+      transform: rotate(180deg);
+    }
+  }
+
+  & .offcanvas-body h3 {
+    color: var(--dark-color);
+    text-align: center;
+    font-weight: 700;
+    margin-top: 2rem;
+  }
+}
+
+// ==================home-carousel-start============
+.carousel {
+
+  & .inner-1 {
+    height: 70vh;
+    width: 100%;
+    background-image: url(../images/home-c-1.webp);
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
+
+}
+
+// ==================home-carousel-End==============

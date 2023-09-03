@@ -101,18 +101,11 @@ html {
   font-size: 0.6rem;
 }
 
-.dropdown_box {
-  position: relative;
-}
-.dropdown_box:hover .dropdown_details {
-  display: block;
-  transition: all 10s;
-}
-
 .dropdown_details {
   position: absolute;
   right: 2rem;
   display: none;
+  z-index: 999;
 }
 .dropdown_details ul {
   list-style: none;
@@ -127,7 +120,7 @@ html {
   font-size: 0.9rem;
   color: var(--dark-color);
   position: relative;
-  margin-top: 0.5rem;
+  margin-top: 0.6rem;
   transition: all 0.2s;
   cursor: pointer;
 }
@@ -135,12 +128,119 @@ html {
   color: var(--primary-color);
 }
 
+.dropdown_details .dropdown_nav {
+  font-size: 0.9rem;
+  color: var(--dark-color);
+  position: relative;
+  margin-top: 0.6rem;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.dropdown_box {
+  position: relative;
+}
+.dropdown_box:hover .dropdown_details {
+  display: block;
+}
+.dropdown_box:hover .nabv_dropdown {
+  display: block;
+}
+
+.nabv_dropdown {
+  position: absolute;
+  left: 0;
+  display: none;
+  z-index: 999;
+}
+.nabv_dropdown ul {
+  list-style: none;
+  background-color: var(--white-color);
+  border: 0.5px solid rgba(128, 128, 128, 0.262745098);
+  width: 230px;
+  max-height: 200px;
+  padding: 0;
+  color: var(--dark-color);
+}
+.nabv_dropdown ul a {
+  text-decoration: none;
+  color: var(--dark-color);
+  width: 100%;
+}
+.nabv_dropdown ul .dropdown_nav {
+  font-size: 1rem;
+  color: var(--dark-color);
+  position: relative;
+  margin-top: 0.8rem;
+  padding-left: 0.8rem;
+  padding-bottom: 0.8rem;
+  transition: all 0.2s;
+  cursor: pointer;
+  border-bottom: 0.5px dashed rgba(128, 128, 128, 0.262745098);
+}
+.nabv_dropdown ul .dropdown_nav i {
+  display: none;
+  margin: 0 0.2rem;
+}
+.nabv_dropdown ul .dropdown_nav:hover a {
+  color: var(--primary-color);
+}
+.nabv_dropdown ul .dropdown_nav:hover a i {
+  color: var(--primary-color);
+  display: inline;
+}
+
+.new-btn {
+  color: var(--white-color);
+  background-color: #FF0000;
+  font-size: 0.7rem;
+  position: absolute;
+  right: -5px;
+  top: -15px;
+  padding: 0px 5px;
+  font-weight: 700;
+}
+
+.search-bar {
+  position: relative;
+}
+.search-bar i {
+  position: absolute;
+  top: 30%;
+  left: 1rem;
+  color: var(--dark-color);
+  font-size: 1.2rem;
+}
+.search-bar i:hover {
+  color: var(--primary-color);
+}
+.search-bar input {
+  border: none;
+  background-color: #f7f7f7;
+  border-radius: 30px;
+  padding: 10px 20px 10px 50px;
+  width: 100%;
+  font-size: 0.8rem;
+}
+.search-bar input:focus {
+  outline: 0.5px solid gray;
+}
+.search-bar input::-moz-placeholder {
+  color: gray;
+  font-size: 0.8rem;
+}
+.search-bar input::placeholder {
+  color: gray;
+  font-size: 0.8rem;
+}
+
 .navmain {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 6rem;
   align-items: center;
   border: 0.5px solid rgba(128, 128, 128, 0.262745098);
+  padding: 0 2rem;
 }
 
 .navbar-link .nav_list {
@@ -150,9 +250,72 @@ html {
   padding: 0;
   -moz-column-gap: 20px;
        column-gap: 20px;
+  margin-bottom: 0 !important;
 }
 .navbar-link .nav_list .link {
   text-decoration: none;
   color: #222;
   font-size: 1rem;
+}
+
+.nav-lik:hover {
+  transition: all 0.2s !important;
+  color: var(--primary-color) !important;
+}
+
+.nav-icons {
+  display: flex;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+  height: 100%;
+  align-items: center;
+}
+.nav-icons .nav-user i {
+  font-size: 1.6rem;
+  color: rgb(76, 75, 75);
+  height: 100%;
+}
+.nav-icons .nav-user:hover i {
+  color: var(--primary-color);
+}
+.nav-icons .user_icn i {
+  border: 0.2px solid var(--dark-color);
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 1.2rem !important;
+}
+.nav-icons .user_icn i:hover {
+  border-color: var(--primary-color);
+}
+
+.cart-box button {
+  height: 50px;
+  width: 50px;
+  background-color: var(--primary-color);
+  border: none;
+  position: absolute;
+  left: -50px;
+}
+.cart-box button i {
+  color: var(--white-color);
+  transition: all 1s;
+  font-size: 25px;
+}
+.cart-box button:hover i {
+  transform: rotate(180deg);
+}
+.cart-box .offcanvas-body h3 {
+  color: var(--dark-color);
+  text-align: center;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+.carousel .inner-1 {
+  height: 70vh;
+  width: 100%;
+  background-image: url(../images/home-c-1.webp);
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
 }/*# sourceMappingURL=style.css.map */
