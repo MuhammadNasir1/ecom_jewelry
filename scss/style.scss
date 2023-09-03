@@ -374,7 +374,17 @@ html {
 }
 
 // ==================home-carousel-start============
+.car-icon {
+  visibility: hidden;
+  transition: all 0.5s;
+
+}
+
 .carousel {
+  &:hover .car-icon {
+    visibility: visible !important;
+
+  }
 
   & .inner-1 {
     height: 70vh;
@@ -386,6 +396,8 @@ html {
     display: flex;
     justify-content: center;
     flex-direction: column;
+
+
 
   }
 
@@ -427,6 +439,7 @@ html {
 
 .content {
   margin: 0 10vw;
+
   & .btn-hero {
     text-decoration: none;
     color: #fff;
@@ -458,3 +471,166 @@ html {
 }
 
 // ==================home-carousel-End==============
+
+.policy-item {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 5rem 0;
+
+  & img {
+    width: 30px;
+    height: 100%;
+  }
+
+  & .policy-content {
+    margin-bottom: 0;
+    // line-height: 10px;
+
+    & p {
+      color: var(--dark-color);
+    }
+
+    & h6 {
+      font-weight: 700;
+    }
+  }
+}
+
+
+// =========product card top
+.product-s-con {
+  text-align: center;
+
+  & p {
+    color: var(--dark-color);
+  }
+
+  & h2 {
+    font-weight: 700;
+  }
+}
+
+.pro-tab-list {
+  padding: 0 !important;
+  display: flex;
+  justify-content: center;
+
+  & li button {
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  & .nav-link {
+    color: var(--dark-color);
+  }
+
+}
+
+.tab-nav .active {
+  color: black;
+}
+
+// ==========main-product-box
+
+.main-product-box {
+  // margin-bottom: 500px;
+  width: 100%;
+  border: 2px solid;
+}
+
+.product-box {
+
+  & .img-sec {
+    height: 263px;
+    width: 100%;
+    position: relative;
+
+    & img {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  & .product-con {
+    text-align: center;
+    line-height: 8px;
+    & a {
+      text-decoration: none;
+      color: #222;
+    }
+
+  }
+}
+
+.product-card {
+  min-width: 263px;
+  max-width: 263px;
+}
+
+// =========media-quaery
+@media (max-width:1000px) {
+  .search-bar {
+    display: none;
+  }
+}
+
+@media (max-width:970px) {
+  .navbar-link {
+    display: none;
+  }
+}
+
+
+
+
+#myCarousel {
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .carousel_iner .carousel-item>div {
+    display: none;
+  }
+
+  .carousel_iner .carousel-item>div:first-child {
+    display: block;
+  }
+}
+
+.carousel_iner .carousel-item.active,
+.carousel_iner .carousel-item-start,
+.carousel_iner .carousel-item-next,
+.carousel_iner .carousel-item-prev {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+
+  .carousel_iner .carousel-item-right.active,
+  .carousel_iner .carousel-item-next,
+  .carousel-item-next:not(.carousel-item-start) {
+    transform: translateX(25%) !important;
+  }
+
+  .carousel_iner .carousel-item-left.active,
+  .carousel-item-prev:not(.carousel-item-end),
+  .active.carousel-item-start,
+  .carousel-item-prev:not(.carousel-item-end) {
+    transform: translateX(-25%) !important;
+  }
+
+  .carousel-item-next.carousel-item-start,
+  .active.carousel-item-end {
+    transform: translateX(0) !important;
+  }
+
+  .carousel_iner .carousel-item-prev,
+  .carousel-item-prev:not(.carousel-item-end) {
+    transform: translateX(-25%) !important;
+  }
+}

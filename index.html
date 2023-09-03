@@ -237,15 +237,163 @@
       </div>
 
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span><i class="fa-solid fa-chevron-left"></i></span>
+        <span class="car-icon"><i class="fa-solid fa-chevron-left"></i></span>
       </button>
       <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-        <span><i class="fa-solid fa-chevron-right"></i></span>
+        <span class="car-icon"><i class="fa-solid fa-chevron-right"></i></span>
       </button>
     </div>
   </section>
 
 
+  <div class="container ">
+    <div class="row">
+      <div class="col-lg-3 col-md-6">
+        <div class="policy-item">
+          <img src="./images/icons/airplane.png" alt="airplane" style="transform: rotate(40deg);">
+          <div class="policy-content">
+            <h6>Free Shipping</h6>
+            <p>Free shipping all order</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="policy-item">
+          <img src="./images/icons/back.png" alt="return">
+          <div class="policy-content">
+            <h6>Money Return</h6>
+            <p>30 days for free return</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="policy-item">
+          <img src="./images/icons/back.png" alt="return">
+          <div class="policy-content">
+            <h6>Money Return</h6>
+            <p>30 days for free return</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="policy-item">
+          <img src="./images/icons/credit-card.png" alt="return">
+          <div class="policy-content">
+            <h6>100% Payment Secure</h6>
+            <p>We ensure secure payment</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="product-show">
+        <div class="product-s-con">
+          <h2>Our Products</h2>
+          <p>Add our products to weekly lineup
+          </p>
+        </div>
+        <!-- =====================tab-panel=================== -->
+        <div class="">
+          <ul class="nav pro-tab-list  " id="myTab" role="tablist">
+            <li class="tab-nav" role="presentation">
+              <button class="nav-link active   " id="home-tab" data-bs-toggle="tab" data-bs-target="#gold"
+                type="button">Gold</button>
+            </li>
+            <li class="tab-nav" role="presentation">
+              <button class="nav-link" id="diamond-tab" data-bs-toggle="tab" data-bs-target="#diamond"
+                type="button">Diamond</button>
+            </li>
+            <li class="tab-nav" role="presentation">
+              <button class="nav-link" id="beonze-tab" data-bs-toggle="tab" data-bs-target="#bronze"
+                type="button">Bronze</button>
+            </li>
+            <li class="tab-nav" role="presentation">
+              <button class="nav-link" id="silver-tab" data-bs-toggle="tab" data-bs-target="#silver"
+                type="button">Silver</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <!-- ================description-start====================== -->
+            <div class="tab-pane fade show active" id="gold">
+              <!-- =========gold-product-container========== -->
+              <div id="myCarousel" class="carousel carousel-pro  slide container" data-bs-ride="carousel">
+                <div class="carousel-inner carousel_iner  w-100">
+                  <div class="carousel-item carouse-items active">
+                    <div class="col-3 product-card">
+                      <div class="main-product-box">
+                        <div class="product-box">
+                          <div class="img-sec">
+                            <a href="#">
+                              <img src="./images/product/gold1-1.webp" alt="">
+                            </a>
+                          </div>
+                          <div class="product-con">
+                            <p>Type 1</p>
+                            <a href="#">1. New and sale badge product</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item carouse-items">
+                    <div class="col-md-3">
+                      <div class="card card-body">
+                        <img class="img-fluid" src="https://via.placeholder.com/640x360?text=8">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                  <span class="car-icon"><i class="fa-solid fa-chevron-left"></i></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <!-- ================description-End====================== -->
+            <div class="tab-pane fade" id="diamond">
+
+            </div>
+            <div class="tab-pane fade" id="bronze">3</div>
+            <div class="tab-pane fade" id="silver">4</div>
+          </div>
+        </div>
+        <!-- ==================tab-panel-end========================= -->
+      </div>
+    </div>
+    </div>
+    </div>
+
+    </div>
+    </div>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $('.carousel-pro .carouse-items').each(function () {
+      var minPerSlide = 4;
+      var next = $(this).next();
+      if (!next.length) {
+        next = $(this).siblings(':first');
+      }
+      next.children(':first-child').clone().appendTo($(this));
+
+      for (var i = 0; i < minPerSlide; i++) {
+        next = next.next();
+        if (!next.length) {
+          next = $(this).siblings(':first');
+        }
+
+        next.children(':first-child').clone().appendTo($(this));
+      }
+    });
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
     integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
