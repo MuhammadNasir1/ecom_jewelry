@@ -1,11 +1,9 @@
 var scrollbtn = document.querySelector(".scrolltop");
-// var scrollbtn = document.getElementById("scroll_top");
-
 window.addEventListener("scroll", () => {
   scroll();
 });
 function scroll() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
     scrollbtn.style.display = "block";
   } else {
     scrollbtn.style.display = "none";
@@ -17,6 +15,7 @@ scrollbtn.addEventListener("click", () => {
   document.documentElement.scrollTop = 0;
 });
 
+// wind
 const saleEndDate = new Date("2023-10-30T23:59:59").getTime();
 const timerInterval = setInterval(updateTimer, 1000);
 function updateTimer() {
@@ -59,8 +58,9 @@ let hide_salebox = hide_message.addEventListener("click", function () {
 
 gsap.from(".sale_box", {
   y: -1400,
-  transition: 1,
-  duration: 0.5,
+  // transition: 1,
+  duration: 1,
+  ease: Expo.easeinout,
 });
 
 let curruncy_list = document.querySelectorAll(".curruncylist");

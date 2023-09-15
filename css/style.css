@@ -31,6 +31,7 @@ body {
 }
 
 .scrolltop {
+  display: none;
   bottom: 50px;
   cursor: pointer;
   height: 50px;
@@ -637,6 +638,9 @@ footer {
   background-color: var(--light-color);
   padding-top: 2rem;
 }
+footer .footer-top {
+  margin-bottom: 5rem;
+}
 footer .sec-1 {
   padding-top: 1rem;
 }
@@ -827,4 +831,23 @@ footer .footer-bottom a {
   .carousel-item-prev:not(.carousel-item-end) {
     transform: translateX(-25%) !important;
   }
+}
+.navigater {
+  background-color: var(--light-color);
+  height: 5rem;
+  display: flex;
+  align-items: center;
+}
+.navigater p {
+  word-spacing: 1rem;
+  margin: 0;
+  font-size: 14px;
+  margin-left: 1.5rem;
+}
+.navigater p a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+.navigater p i {
+  color: black;
 }/*# sourceMappingURL=style.css.map */

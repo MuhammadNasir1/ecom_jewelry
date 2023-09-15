@@ -30,6 +30,7 @@ body {
 
 // ======scrllbox==========
 .scrolltop {
+  display: none;
   bottom: 50px;
   cursor: pointer;
   height: 50px;
@@ -784,8 +785,13 @@ body {
 
 
 footer {
+
   background-color: var(--light-color);
   padding-top: 2rem;
+
+  & .footer-top {
+    margin-bottom: 5rem;
+  }
 
   & .sec-1 {
     padding-top: 1rem;
@@ -1028,5 +1034,30 @@ footer {
   .carousel_iner .carousel-item-prev,
   .carousel-item-prev:not(.carousel-item-end) {
     transform: translateX(-25%) !important;
+  }
+}
+
+
+
+// =============shoppage-start===================
+.navigater {
+  background-color: var(--light-color);
+  height: 5rem;
+  display: flex;
+  align-items: center;
+
+  & p {
+    word-spacing: 1rem;
+    margin: 0;
+    font-size: 14px;
+    margin-left: 1.5rem;
+    & a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    & i {
+      color: black;
+    }
   }
 }
