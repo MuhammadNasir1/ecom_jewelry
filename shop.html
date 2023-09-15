@@ -58,7 +58,7 @@
         </div>
         <div style="display: flex;">
           <div class="dropdown_box">
-            <p class="dropshow_btn "><span class="curruncy_view">USD</span> <i class="fa-solid fa-chevron-down"></i>
+            <p class="dropshow  "><span class="curruncy_view">USD</span> <i class="fa-solid fa-chevron-down"></i>
             </p>
             <div class="dropdown_details ">
               <ul class="dropdown_menu ">
@@ -72,7 +72,7 @@
           </div>
           <div class="mx-2">|</div>
           <div class="dropdown_box">
-            <p class="dropshow_btn "><span class="lan_view">English</span> <i class="fa-solid fa-chevron-down"></i>
+            <p class="dropshow  "><span class="lan_view">English</span> <i class="fa-solid fa-chevron-down"></i>
             </p>
             <div class="dropdown_details" style="margin-right: 0px; ">
               <ul class="dropdown_menu ">
@@ -102,7 +102,7 @@
         <li><a href="#" class="link nav-lik">Contact us</a></li>
         <!-- ================product dropdown_box============ -->
         <div class="dropdown_box">
-          <p class="dropshow_btn nav-lik ">Product <i class="fa-solid fa-chevron-down"></i> <span
+          <p class="dropshow  nav-lik ">Product <i class="fa-solid fa-chevron-down"></i> <span
               class="new-btn">New</span>
           </p>
           <div class="nabv_dropdown " style="padding-top: 30px;   right: 0rem;">
@@ -124,7 +124,7 @@
         </div>
         <!-- ================blog dropdown_box============ -->
         <div class="dropdown_box">
-          <p class="dropshow_btn nav-lik ">Blog <i class="fa-solid fa-chevron-down"></i>
+          <p class="dropshow  nav-lik ">Blog <i class="fa-solid fa-chevron-down"></i>
           </p>
           <div class="nabv_dropdown " style="padding-top: 30px;   right: 0rem;">
             <ul>
@@ -138,7 +138,7 @@
         </div>
         <!-- ================Pages dropdown_box============ -->
         <div class="dropdown_box">
-          <p class="dropshow_btn nav-lik">Pages <i class="fa-solid fa-chevron-down"></i>
+          <p class="dropshow  nav-lik">Pages <i class="fa-solid fa-chevron-down"></i>
           </p>
           <div class="nabv_dropdown " style="padding-top: 30px;   right: 0rem;">
             <ul>
@@ -165,7 +165,7 @@
 
     <div class="nav-icons">
       <div class="dropdown_box ">
-        <p class="dropshow_btn "> <span class="nav-user user_icn"><i class='bx bx-user'></i></span></p>
+        <p class="dropshow  "> <span class="nav-user user_icn"><i class='bx bx-user'></i></span></p>
         <div class="dropdown_details " style="right: 0; padding-top: 10px;">
           <ul class="dropdown_menu ">
             <li class="dropdown_list">My Account</li>
@@ -204,22 +204,285 @@
   <div class="container mt-3">
     <div class="row">
       <div class="col-lg-3 ">
+        <!-- ----------------------------------- -->
         <div class="filterbox">
           <div class="collapse-box">
-            <h5 data-bs-toggle="collapse" href="#collapse1" role="button" aria-controls="collapse1">Availability
+            <h5 class="close_col" data-bs-toggle="collapse" href="#collapse1" role="button" aria-controls="collapse1"
+              aria-expanded="true">Availability
               <span><i class="fa-solid fa-chevron-down"></i></span>
             </h5>
-
-
-            <div class="collapse" id="collapse1">
-              <div class="card card-body">
-                Some placeholder content for the collapse component. This panel is hidden by default but revealed when
-                the
-                user activates the relevant trigger.
+            <div class="collapse show " id="collapse1">
+              <div class="coll-box-content">
+                <div>
+                  <span>0 Selected</span>
+                </div>
+                <div class="checkboxes mt-3">
+                  <input type="checkbox" id="stock">
+                  <label for="stock">In Stock (39)</label>
+                </div>
+                <div class="checkboxes">
+                  <input type="checkbox" id="ostock">
+                  <label for="ostock">Out Of Stock (28)</label>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <!-- ----------------------------------- -->
+        <!-- ----------------------------------- -->
+        <div class="filterbox">
+          <div class="collapse-box">
+            <h5 class="close_col" data-bs-toggle="collapse" href="#collapse2" role="button" aria-controls="collapse2"
+              aria-expanded="true">Price
+              <span><i class="fa-solid fa-chevron-down"></i></span>
+            </h5>
+            <div class="collapse show " id="collapse2">
+              <div class="coll-box-content">
+                <div>
+                  <span>Selected</span>
+                </div>
+                <div class="input-pricing mt-3">
+
+                  <label for="stock">$</label>
+                  <input type="number" id="stock">
+                  <label for="stock">From</label>
+
+                  <label for="stock" style="margin-left: 10px;">$</label>
+                  <input type="number" id="stock">
+                  <label for="stock">To</label>
+
+                </div>
+                <div>
+                  <input type="submit" value="Filter">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ----------------------------------- -->
+
+        <!-- ----------------------------------- -->
+        <div class="filterbox">
+          <div class="collapse-box">
+            <h5 data-bs-toggle="collapse" href="#collapse3" role="button" aria-controls="collapse3"
+              aria-expanded="true">Product type
+              <span><i class="fa-solid fa-chevron-down"></i></span>
+            </h5>
+            <div class="collapse show " id="collapse3">
+              <div class="coll-box-content">
+                <div>
+                  <span>0 Selected</span>
+                </div>
+                <div class="checkboxes mt-3">
+                  <input type="checkbox" id="t1">
+                  <label for="t1">Type 1 (3)</label>
+                </div>
+                <div class="checkboxes">
+                  <input type="checkbox" id="t2">
+                  <label for="t2">Type 2 (6)</label>
+                </div>
+                <div class="checkboxes">
+                  <input type="checkbox" id="t3">
+                  <label for="t3">Type 3 (1)</label>
+                </div>
+                <div class="checkboxes">
+                  <input type="checkbox" id="t4">
+                  <label for="t4">Type 4 (8)</label>
+                </div>
+                <div class="checkboxes">
+                  <input type="checkbox" id="t5">
+                  <label for="t5">Type 5 (9)</label>
+                </div>
+                <div class="checkboxes">
+                  <input type="checkbox" id="t6">
+                  <label for="t6">Type 6 (3)</label>
+                </div>
+                <div class="checkboxes">
+                  <input type="checkbox" id="t7">
+                  <label for="t7">Type 7 (1)</label>
+                </div>
+                <div class="checkboxes">
+                  <input type="checkbox" id="t8">
+                  <label for="t8">Type 8 (6)</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ----------------------------------- -->
+        <!-- ----------------------------------- -->
+        <div class="filterbox">
+          <div class="collapse-box">
+            <h5 data-bs-toggle="collapse" href="#collapse4" role="button" aria-controls="collapse4"
+              aria-expanded="true">Brand
+              <span><i class="fa-solid fa-chevron-down"></i></span>
+            </h5>
+            <div class="collapse show " id="collapse4">
+              <div class="coll-box-content">
+                <div>
+                  <span>0 Selected</span>
+                </div>
+                <div class="checkboxes mt-3">
+                  <input type="checkbox" id="v1">
+                  <label for="v1">Vendor 1 (3) </label>
+                </div>
+                <div class="checkboxes">
+                  <input type="checkbox" id="v2">
+                  <label for="v2">Vendor 2 (6)</label>
+                </div>
+                <div class="checkboxes">
+                  <input type="checkbox" id="v3">
+                  <label for="v3">Vendor 3 (1)</label>
+                </div>
+                <div class="checkboxes">
+                  <input type="checkbox" id="v4">
+                  <label for="v4">Vendor 4 (8)</label>
+                </div>
+                <div class="checkboxes">
+                  <input type="checkbox" id="v5">
+                  <label for="v5">Vendor 5 (9)</label>
+                </div>
+                <div class="checkboxes">
+                  <input type="checkbox" id="v6">
+                  <label for="v6">Vendor 6 (3)</label>
+                </div>
+                <div class="checkboxes">
+                  <input type="checkbox" id="v7">
+                  <label for="v7">Vendor 7 (1)</label>
+                </div>
+                <div class="checkboxes">
+                  <input type="checkbox" id="v8">
+                  <label for="v8">Vendor 8 (6)</label>
+                </div>
+                <div class="checkboxes">
+                  <input type="checkbox" id="v9">
+                  <label for="v9">Vendor 9 (0)</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ----------------------------------- -->
+        <!-- ----------------------------------- -->
+        <div class="filterbox">
+          <div class="collapse-box">
+            <h5 data-bs-toggle="collapse" href="#collapse5" role="button" aria-controls="collapse5"
+              aria-expanded="true">Color
+              <span><i class="fa-solid fa-chevron-down"></i></span>
+            </h5>
+            <div class="collapse show " id="collapse5">
+              <div class="coll-box-content">
+                <div>
+                  <span>0 Selected</span>
+                </div>
+                <div class="checkboxes mt-3">
+                  <input type="checkbox" id="bck">
+                  <label for="bck">Black (7)</label>
+                </div>
+                <div class="checkboxes">
+                  <input type="checkbox" id="bl">
+                  <label for="bl">Blue (15)</label>
+                </div>
+                <div class="checkboxes">
+                  <input type="checkbox" id="gd">
+                  <label for="gd">Gold (12)</label>
+                </div>
+                <div class="checkboxes">
+                  <input type="checkbox" id="gray">
+                  <label for="gray">Gray (12)</label>
+                </div>
+                <div class="checkboxes">
+                  <input type="checkbox" id="gr">
+                  <label for="gr">Green (15)</label>
+                </div>
+                <div class="checkboxes">
+                  <input type="checkbox" id="ma">
+                  <label for="ma">Magenta (6)</label>
+                </div>
+                <div class="checkboxes">
+                  <input type="checkbox" id="nav">
+                  <label for="nav">Navy (7)</label>
+                </div>
+                <div class="checkboxes">
+                  <input type="checkbox" id="o">
+                  <label for="o">Orange (3)</label>
+                </div>
+                <div class="checkboxes">
+                  <input type="checkbox" id="red">
+                  <label for="red">Red (16)</label>
+                </div>
+                <div class="checkboxes">
+                  <input type="checkbox" id="vi">
+                  <label for="vi">Violet (7)</label>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ----------------------------------- -->
+        <!-- ----------------------------------- -->
+        <div class="filterbox">
+          <div class="collapse-box">
+            <h5 data-bs-toggle="collapse" href="#collapse6" role="button" aria-controls="collapse6"
+              aria-expanded="true">Size
+              <span><i class="fa-solid fa-chevron-down"></i></span>
+            </h5>
+            <div class="collapse show " id="collapse6">
+              <div class="coll-box-content">
+                <div>
+                  <span>0 Selected</span>
+                </div>
+                <div class="checkboxes mt-3">
+                  <input type="checkbox" id="m">
+                  <label for="m">M (17)</label>
+                </div>
+                <div class="checkboxes">
+                  <input type="checkbox" id="l">
+                  <label for="l">L (17)</label>
+                </div>
+                <div class="checkboxes">
+                  <input type="checkbox" id="xl">
+                  <label for="xl">Xl (13)</label>
+                </div>
+                <div class="checkboxes">
+                  <input type="checkbox" id="xxl">
+                  <label for="xxl">Xxl (7)</label>
+                </div>
+                <div class="checkboxes">
+                  <input type="checkbox" id="x">
+                  <label for="x">X (1)</label>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ----------------------------------- -->
+        <!-- ----------------------------------- -->
+        <div class="filterbox">
+          <div class="collapse-box">
+            <h5 data-bs-toggle="collapse" href="#collapse7" role="button" aria-controls="collapse7"
+              aria-expanded="true">Product rating count
+              <span><i class="fa-solid fa-chevron-down"></i></span>
+            </h5>
+            <div class="collapse show " id="collapse7">
+              <div class="coll-box-content">
+                <div>
+                  <span>0 Selected</span>
+                </div>
+                <div class="checkboxes mt-3">
+                  <input type="checkbox" id="rat">
+                  <label for="rat">Ratings (4)</label>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ----------------------------------- -->
+
       </div>
     </div>
   </div>

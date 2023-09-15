@@ -5,16 +5,13 @@ window.addEventListener("scroll", () => {
 let navbar = document.querySelector(".navmain");
 function scroll() {
   if (
-    document.body.scrollTop > 350 ||
-    document.documentElement.scrollTop > 350
+    document.body.scrollTop >= 350 ||
+    document.documentElement.scrollTop >= 350
   ) {
     gsap.from(".navmain", {
       duration: 2,
       ease: Expo.linear,
-      // duration: 1,
-      // height:"4rem",
-      // y:100,
-      transition: .50,
+      transition: 0.5,
     });
     scrollbtn.style.display = "block";
     navbar.style.zIndex = "999";

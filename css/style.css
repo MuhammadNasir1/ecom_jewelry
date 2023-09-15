@@ -852,6 +852,9 @@ footer .footer-bottom a {
   color: black;
 }
 
+.filterbox {
+  margin-top: 2rem;
+}
 .filterbox .collapse-box h5 {
   display: flex;
   justify-content: space-between;
@@ -864,4 +867,51 @@ footer .footer-bottom a {
 .filterbox .collapse-box span i {
   float: right;
   font-size: 14px;
+}
+.filterbox .coll-box-content {
+  margin-top: 1rem;
+}
+.filterbox .coll-box-content span {
+  border: 1px dashed #efefef;
+  padding: 2px 10px;
+  border-radius: 30px;
+  font-size: 14px;
+  color: var(--dark-color);
+}
+.filterbox .checkboxes label {
+  font-size: 14px;
+  margin-left: 0.75rem;
+  line-height: 2.2rem;
+  color: var(--dark-color);
+}
+.filterbox input[type=checkbox] {
+  margin-left: 8px;
+  width: 13px;
+  height: 13px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0.5px solid rgb(199, 197, 197);
+}
+.filterbox input[type=checkbox]:checked {
+  background-color: var(--primary-color);
+}
+.filterbox input[type=submit] {
+  color: #fff;
+  font-size: 15px;
+  border-radius: 0;
+  background-color: #c29958;
+  border: none;
+  padding: 8px 25px;
+  margin-top: 1.25rem;
+  border-radius: 18px;
+}
+.filterbox input[type=number] {
+  width: 80px;
+  padding: 10px;
+  border: 0.5px solid rgb(199, 197, 197);
+  font-size: 14px;
+}
+.filterbox input[type=number]:focus {
+  outline: none;
 }/*# sourceMappingURL=style.css.map */
