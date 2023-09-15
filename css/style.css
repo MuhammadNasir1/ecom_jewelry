@@ -5,10 +5,7 @@
   box-sizing: border-box;
 }
 
-html,
 body {
-  height: 100%;
-  width: 100%;
   font-family: "Lato", sans-serif;
 }
 
@@ -268,6 +265,9 @@ body {
   align-items: center;
   border: 0.5px solid rgba(128, 128, 128, 0.262745098);
   padding: 0 2rem;
+  background-color: var(--white-color);
+  position: relative;
+  top: 0;
 }
 
 .navbar-link .nav_list {
@@ -850,4 +850,18 @@ footer .footer-bottom a {
 }
 .navigater p i {
   color: black;
+}
+
+.filterbox .collapse-box h5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  font-weight: 700;
+  border-bottom: 0.5px solid #c7c7c7;
+  padding-bottom: 10px;
+}
+.filterbox .collapse-box span i {
+  float: right;
+  font-size: 14px;
 }/*# sourceMappingURL=style.css.map */

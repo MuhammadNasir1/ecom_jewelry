@@ -6,11 +6,7 @@
   box-sizing: border-box;
 }
 
-
-html,
 body {
-  height: 100%;
-  width: 100%;
   font-family: 'Lato', sans-serif;
 }
 
@@ -309,7 +305,9 @@ body {
   align-items: center;
   border: .50px solid #80808043;
   padding: 0 2rem;
-
+  background-color: var(--white-color);
+  position: relative;
+  top: 0;
 }
 
 .navbar-link {
@@ -1051,6 +1049,7 @@ footer {
     margin: 0;
     font-size: 14px;
     margin-left: 1.5rem;
+
     & a {
       color: var(--primary-color);
       text-decoration: none;
@@ -1058,6 +1057,27 @@ footer {
 
     & i {
       color: black;
+    }
+  }
+}
+
+
+.filterbox {
+  & .collapse-box {
+
+    & h5 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      font-weight: 700;
+      border-bottom: .50px solid #c7c7c7;
+      padding-bottom: 10px;
+    }
+
+    & span i {
+      float: right;
+      font-size: 14px;
     }
   }
 }

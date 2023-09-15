@@ -2,11 +2,28 @@ var scrollbtn = document.querySelector(".scrolltop");
 window.addEventListener("scroll", () => {
   scroll();
 });
+let navbar = document.querySelector(".navmain");
 function scroll() {
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+  if (
+    document.body.scrollTop > 350 ||
+    document.documentElement.scrollTop > 350
+  ) {
+    gsap.from(".navmain", {
+      duration: 2,
+      ease: Expo.linear,
+      // duration: 1,
+      // height:"4rem",
+      // y:100,
+      transition: .50,
+    });
     scrollbtn.style.display = "block";
+    navbar.style.zIndex = "999";
+    navbar.style.height = "4rem";
+    navbar.style.position = "sticky";
   } else {
     scrollbtn.style.display = "none";
+    navbar.style.position = "relative";
+    navbar.style.height = "6rem";
   }
 }
 
@@ -58,7 +75,6 @@ let hide_salebox = hide_message.addEventListener("click", function () {
 
 gsap.from(".sale_box", {
   y: -1400,
-  // transition: 1,
   duration: 1,
   ease: Expo.easeinout,
 });
