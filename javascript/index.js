@@ -1,4 +1,23 @@
-const saleEndDate = new Date("2023-09-15T23:59:59").getTime();
+var scrollbtn = document.querySelector(".scrolltop");
+// var scrollbtn = document.getElementById("scroll_top");
+
+window.addEventListener("scroll", () => {
+  scroll();
+});
+function scroll() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollbtn.style.display = "block";
+  } else {
+    scrollbtn.style.display = "none";
+  }
+}
+
+scrollbtn.addEventListener("click", () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+});
+
+const saleEndDate = new Date("2023-10-30T23:59:59").getTime();
 const timerInterval = setInterval(updateTimer, 1000);
 function updateTimer() {
   const now = new Date().getTime();
@@ -58,4 +77,16 @@ let change_lan = lan_list.forEach((lan) => {
   lan.addEventListener("click", function () {
     lan_view.innerHTML = lan.getAttribute("data-lan");
   });
+});
+
+var fbtn = document.querySelector("#footer_btn");
+var finput = document.querySelector("#footer_input");
+finput.addEventListener("input", function () {
+  console.log(finput.value);
+  if (finput.value !== "") {
+    fbtn.removeAttribute("disabled");
+    fbtn.style.color = "#c29958";
+  } else {
+    fbtn.setAttribute("disabled", "true");
+  }
 });
